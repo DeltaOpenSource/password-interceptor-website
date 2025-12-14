@@ -19,4 +19,6 @@ document.getElementById('registerForm').addEventListener('submit', async functio
     console.error('Ошибка при отправке:', error);
     alert('Не удалось отправить данные. Проверьте подключение.');
   }
+
+  document.getElementById('registerForm').clear()
 });
