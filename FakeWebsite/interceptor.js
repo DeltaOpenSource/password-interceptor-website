@@ -3,4 +3,14 @@ document.getElementById('registerForm').addEventListener('submit', function(even
 
     const login = document.getElementById('login').value;
     const password = document.getElementById('password').value;
+
+    const response = await fetch('https://.vercel.app/api/', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ login, password })
+     });
+
+    const result = await response.json();
 )};
